@@ -1,0 +1,19 @@
+{
+  "name": "spiral/idehelper",
+  "description": "Spiral Framework IDE helper",
+  "authors": [
+    {
+      "name": "Dmitry Mironov",
+      "email": "dmitry.mironov@spiralscout.com"
+    }
+  ],
+  "require": {
+    "php": ">=7.0",
+    "spiral/framework": "^0.9"
+  },
+  "autoload": {
+    "psr-4": {
+      "Spiral\\": "src/"
+    }
+  }
+}
