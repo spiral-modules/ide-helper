@@ -46,7 +46,11 @@ return [
             'writers'  => ['phpProperty'],
         ],
         'entity'    => [
-            'locators' => ['requests', 'records'],
+            'locators' => [
+                'requests',
+                /* 'documents', */
+                'records'
+            ],
             'writers'  => ['phpDoc'],
         ],
         'meta'      => [
