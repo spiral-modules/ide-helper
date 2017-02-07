@@ -1,4 +1,6 @@
-# Spiral IDE Helper
+Spiral IDE Helper
+=======================
+[![Latest Stable Version](https://poser.pugx.org/spiral/ide-helper/v/stable)](https://packagist.org/packages/spiral/ide-helper) [![Total Downloads](https://poser.pugx.org/spiral/ide-helper/downloads)](https://packagist.org/packages/spiral/ide-helper) [![License](https://poser.pugx.org/spiral/ide-helper/license)](https://packagist.org/packages/spiral/ide-helper)
 
 This module generate IDE help files for spiral framework components like Controllers, 
 RequestsFilters, Records, Documents and etc.
