@@ -29,7 +29,7 @@ return [
             'renderer'        => bind(Renderer\ReactorBasedDocRenderer::class),
         ]),
         'meta'    => bind(Writers\SingleFileWriter::class, [
-            'outputFile' => directory('application') . '.phpstorm.meta.php/virtual.meta.php',
+            'outputFile' => directory('root') . '.phpstorm.meta.php/virtual.meta.php',
             'renderer'   => bind(Renderer\PhpstormMetaRenderer::class),
         ]),
     ],
