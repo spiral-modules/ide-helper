@@ -94,10 +94,11 @@ class IdeHelperCommand extends Command
     private function processScopes(array $scopes, array $writers, array $locators)
     {
         foreach ($scopes as $scopeName => $scopeParams) {
-            $this->writeln("<info>Processing scope <comment>$scopeName</comment>.</info>");
+            $this->writeln("<info>Processing scope '<comment>$scopeName</comment>':</info>");
 
             /** @var WriterInterface[] $scopeWriters */
             $scopeWriters = \array_intersect_key($writers, array_flip($scopeParams['writers']));
+
             /** @var LocatorInterface[] $scopeLocators */
             $scopeLocators = \array_intersect_key($locators, array_flip($scopeParams['locators']));
 
@@ -107,15 +108,14 @@ class IdeHelperCommand extends Command
                 $classes = array_merge($classes, $located);
 
                 $countLocated = count($located);
-                $this->writeln("<info>Locator <comment>$name</comment> collect "
-                    . "<comment>$countLocated</comment> classes.</info>");
+                $this->writeln("<fg=cyan>Locating '<comment>$name</comment>', found "
+                    . "<info>$countLocated</info> classes.</fg=cyan>");
             }
 
-            $totalClasses = count($classes);
-            $this->writeln("<info>Total <comment>{$totalClasses}</comment> classes found.</info>");
-
             foreach ($scopeWriters as $name => $writer) {
-                $this->writeln("<info>Applying <comment>$name</comment> writer.</info>");
+                $this->writeln(
+                    "<fg=cyan>Generating docs using writer '<comment>$name</comment>'.</fg=cyan>"
+                );
                 $writer->write($classes);
             }
 
@@ -125,6 +125,7 @@ class IdeHelperCommand extends Command
 
     /**
      * @param array $config
+     *
      * @return WriterInterface[]
      */
     private function makeWriters(array $config): array
@@ -140,6 +141,7 @@ class IdeHelperCommand extends Command
 
     /**
      * @param array $config
+     *
      * @return LocatorInterface[]
      */
     private function makeLocators(array $config): array
