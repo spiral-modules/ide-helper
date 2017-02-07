@@ -1,4 +1,9 @@
 <?php
+/**
+ * IDE-Helper code documentation options.
+ *
+ * @see IdeHelperConfig
+ */
 
 use Spiral\IdeHelper\Locators;
 use Spiral\IdeHelper\Writers;
