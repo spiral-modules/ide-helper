@@ -27,7 +27,7 @@ class IdeHelperModule implements ModuleInterface
     public function register(RegistratorInterface $registrator)
     {
         $registrator->configure('tokenizer', 'directories', 'spiral/idehelper', [
-            "directory('libraries') . 'spiral/ide-helper/src/',",
+            "directory('libraries') . 'spiral/ide-helper/source/',",
         ]);
     }
 
