@@ -6,8 +6,8 @@
  */
 
 use Spiral\IdeHelper\Locators;
-use Spiral\IdeHelper\Writers;
 use Spiral\IdeHelper\Renderer;
+use Spiral\IdeHelper\Writers;
 
 return [
     // locators are responsible for searching classes and their members
@@ -19,21 +19,21 @@ return [
             ],
         ]),
         'bindings'   => Locators\BindingsLocator::class,
-        'documents'  => Locators\DocumentsLocator::class,
         'requests'   => Locators\RequestsLocator::class,
+        /* 'documents'  => Locators\DocumentsLocator::class, */
         'records'    => Locators\RecordsLocator::class,
     ],
     // writers are responsible for storing data collected by locators
     'writers'  => [
         'phpProperty' => bind(Writers\FilePerClassWriter::class, [
-            'outputDirectory' => directory('application') . 'resources/Virtual/',
+            'outputDirectory' => directory('application') . 'resources/ide-helper/',
             'renderer'        => bind(Renderer\ReactorBasedPropertyRenderer::class),
         ]),
-        'phpDoc' => bind(Writers\FilePerClassWriter::class, [
-            'outputDirectory' => directory('application') . 'resources/Virtual/',
+        'phpDoc'      => bind(Writers\FilePerClassWriter::class, [
+            'outputDirectory' => directory('application') . 'resources/ide-helper/',
             'renderer'        => bind(Renderer\ReactorBasedDocRenderer::class),
         ]),
-        'meta'    => bind(Writers\SingleFileWriter::class, [
+        'meta'        => bind(Writers\SingleFileWriter::class, [
             'outputFile' => directory('root') . '.phpstorm.meta.php/virtual.meta.php',
             'renderer'   => bind(Renderer\PhpstormMetaRenderer::class),
         ]),
@@ -45,11 +45,11 @@ return [
             'locators' => ['bindings'],
             'writers'  => ['phpProperty'],
         ],
-        'entity' => [
-            'locators' => ['documents', 'requests', 'records'],
+        'entity'    => [
+            'locators' => ['requests', 'records'],
             'writers'  => ['phpDoc'],
         ],
-        'meta'    => [
+        'meta'      => [
             'locators' => ['containers'],
             'writers'  => ['meta'],
         ],
