@@ -21,15 +21,15 @@ return [
     // writers are responsible for storing data collected by locators
     'writers'  => [
         'phpProperty' => bind(Writers\FilePerClassWriter::class, [
-            'outputDirectory' => directory('root') . 'resources/Virtual/',
+            'outputDirectory' => directory('application') . 'resources/Virtual/',
             'renderer'        => bind(Renderer\ReactorBasedPropertyRenderer::class),
         ]),
         'phpDoc' => bind(Writers\FilePerClassWriter::class, [
-            'outputDirectory' => directory('root') . 'resources/Virtual/',
+            'outputDirectory' => directory('application') . 'resources/Virtual/',
             'renderer'        => bind(Renderer\ReactorBasedDocRenderer::class),
         ]),
         'meta'    => bind(Writers\SingleFileWriter::class, [
-            'outputFile' => directory('root') . '.phpstorm.meta.php/virtual.meta.php',
+            'outputFile' => directory('application') . '.phpstorm.meta.php/virtual.meta.php',
             'renderer'   => bind(Renderer\PhpstormMetaRenderer::class),
         ]),
     ],
