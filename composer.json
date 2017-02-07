@@ -1,6 +1,7 @@
 {
   "name": "spiral/ide-helper",
   "description": "Spiral Framework IDE helper",
+  "license": "MIT",
   "authors": [
     {
       "name": "Dmitry Mironov",
