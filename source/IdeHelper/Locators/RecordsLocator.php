@@ -82,6 +82,7 @@ class RecordsLocator implements LocatorInterface
      * @param RecordSchema        $context
      * @param AbstractColumn[]    $columns
      * @param RelationInterface[] $relations
+     *
      * @return ClassMember[]
      */
     private function scan(RecordSchema $context, array $columns, array $relations)
@@ -102,6 +103,7 @@ class RecordsLocator implements LocatorInterface
 
     /**
      * @param AbstractColumn[] $columns
+     *
      * @return array
      */
     private function processColumns(array $columns): array
@@ -124,6 +126,7 @@ class RecordsLocator implements LocatorInterface
     /**
      * @param array            $fields
      * @param AbstractColumn[] $columns
+     *
      * @return array
      */
     private function processFields(array $fields, array $columns): array
@@ -146,6 +149,7 @@ class RecordsLocator implements LocatorInterface
     /**
      * @param string              $class
      * @param RelationInterface[] $relations
+     *
      * @return array
      */
     private function findRelations(string $class, array $relations): array

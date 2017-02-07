@@ -6,7 +6,7 @@ RequestsFilters, Records, Documents and etc.
 ## Install
 
 ```
-composer require spiral/idehelper
+composer require spiral/ide-helper
 ./spiral register spiral/ide-helper && ./spiral console:reload
 ```
 
@@ -14,10 +14,6 @@ composer require spiral/idehelper
 
 ```
 ./spiral spiral:ide-helper
-```
-or
-```
-./spiral spiral:ide-helper -l locator1,locator2 -w writer1,writer2
 ```
 
 ## Configuration and Terminology
