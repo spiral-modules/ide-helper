@@ -15,7 +15,7 @@ composer require spiral/ide-helper
 ## Usage
 
 ```
-./spiral spiral:ide-helper
+./spiral ide-helper
 ```
 
 ## Configuration and Terminology
