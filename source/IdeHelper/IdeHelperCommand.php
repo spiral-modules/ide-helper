@@ -22,7 +22,7 @@ use Symfony\Component\Console\Input\InputOption;
  */
 class IdeHelperCommand extends Command
 {
-    const NAME        = 'spiral:ide-helper';
+    const NAME        = 'ide-helper';
     const DESCRIPTION = 'Generate IDE help classes';
 
     const OPTIONS = [
