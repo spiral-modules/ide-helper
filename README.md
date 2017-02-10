@@ -3,6 +3,7 @@ Spiral IDE Helper
 [![Latest Stable Version](https://poser.pugx.org/spiral/ide-helper/v/stable)](https://packagist.org/packages/spiral/ide-helper)
 [![Total Downloads](https://poser.pugx.org/spiral/ide-helper/downloads)](https://packagist.org/packages/spiral/ide-helper)
 [![License](https://poser.pugx.org/spiral/ide-helper/license)](https://packagist.org/packages/spiral/ide-helper)
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/spiral-modules/ide-helper/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/spiral-modules/ide-helper/?branch=master)
 [![Coverage Status](https://coveralls.io/repos/github/spiral-modules/ide-helper/badge.svg?branch=master)](https://coveralls.io/github/spiral-modules/ide-helper?branch=master)
 
 This module generate IDE help files for spiral framework components like Controllers, 
