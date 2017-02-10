@@ -16,5 +16,8 @@
     "psr-4": {
       "Spiral\\": "source/"
     }
+  },
+  "require-dev": {
+    "spiral/odm": "^0.9.6"
   }
 }
