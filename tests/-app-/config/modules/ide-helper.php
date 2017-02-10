@@ -20,7 +20,7 @@ return [
         ]),
         'bindings'   => Locators\BindingsLocator::class,
         'requests'   => Locators\RequestsLocator::class,
-        /* 'documents'  => Locators\DocumentsLocator::class, */
+        'documents'  => Locators\DocumentsLocator::class,
         'records'    => Locators\RecordsLocator::class,
     ],
     // writers are responsible for storing data collected by locators
@@ -48,7 +48,7 @@ return [
         'entity'    => [
             'locators' => [
                 'requests',
-                /* 'documents', */
+                'documents',
                 'records'
             ],
             'writers'  => ['phpDoc'],

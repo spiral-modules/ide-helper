@@ -19,9 +19,11 @@ use Spiral\Tests\BaseTest;
  */
 class IdeHelperCommandTest extends BaseTest
 {
-    public function testExecution()
+    public function testNoParams()
     {
         $this->console->run(IdeHelperCommand::NAME);
+
+        // todo replace with "real" asserts
         $this->assertTrue(true);
     }
 }
