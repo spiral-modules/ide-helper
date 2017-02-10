@@ -8,7 +8,6 @@
 
 namespace Spiral\IdeHelper\Locators;
 
-use Interop\Container\ContainerInterface;
 use Spiral\IdeHelper\Model\ClassDefinition;
 use Spiral\IdeHelper\Scanners\BindingsScanner;
 use Spiral\Tokenizer\ClassesInterface;

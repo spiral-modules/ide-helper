@@ -11,7 +11,6 @@ namespace Spiral\IdeHelper\Locators;
 use Psr\Http\Message\UploadedFileInterface;
 use Spiral\Http\Request\RequestFilter;
 use Spiral\IdeHelper\Model\ClassDefinition;
-use Spiral\IdeHelper\Model\ClassMember;
 use Spiral\IdeHelper\Model\ClassProperty;
 use Spiral\Models\Reflections\ReflectionEntity;
 use Spiral\Tokenizer\ClassesInterface;
