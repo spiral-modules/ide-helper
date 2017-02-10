@@ -21,9 +21,7 @@ class IdeHelperCommandTest extends BaseTest
 {
     public function testNoParams()
     {
-        $this->console->run(IdeHelperCommand::NAME);
-
-        // todo replace with "real" asserts
-        $this->assertTrue(true);
+        $result = $this->console->run(IdeHelperCommand::NAME);
+        $this->assertSame(0, $result->getCode());
     }
 }
