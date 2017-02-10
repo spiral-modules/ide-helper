@@ -18,6 +18,15 @@
     }
   },
   "require-dev": {
-    "spiral/odm": "^0.9.6"
+    "spiral/odm": "^0.9.6",
+    "phpunit/phpunit": "~5.0",
+    "mockery/mockery": "^0.9.4"
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Spiral\\Tests\\": "tests/",
+      "TestApplication\\": "tests/-app-/classes/"
+    }
   }
+
 }
