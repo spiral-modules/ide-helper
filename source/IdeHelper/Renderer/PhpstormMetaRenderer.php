@@ -39,6 +39,7 @@ class PhpstormMetaRenderer implements RendererInterface
     public function render(array $classes): string
     {
         $content = '<?php' . PHP_EOL;
+        $content .= 'namespace PHPSTORM_META {' . PHP_EOL;
 
         foreach ($classes as $class) {
             $target = $class->getName();
@@ -53,6 +54,8 @@ class PhpstormMetaRenderer implements RendererInterface
             }
             $content .= "]));" . PHP_EOL;
         }
+
+        $content .= "}" . PHP_EOL;
 
         return $content;
     }

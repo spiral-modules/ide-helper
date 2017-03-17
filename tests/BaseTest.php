@@ -44,6 +44,8 @@ abstract class BaseTest extends TestCase
 {
     use SharedTrait;
 
+    const TESTS_ROOT = __DIR__;
+
     /**
      * @var TestApplication
      */
