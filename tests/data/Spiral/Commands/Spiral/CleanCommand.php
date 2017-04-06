@@ -1,7 +1,7 @@
 <?php
-namespace TestApplication\Controllers;
+namespace Spiral\Commands\Spiral;
 
-class DefaultController
+class CleanCommand
 {
     /**
      * @var \Spiral\Core\MemoryInterface

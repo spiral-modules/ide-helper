@@ -1,7 +1,7 @@
 <?php
-namespace TestApplication\Controllers;
+namespace Spiral\IdeHelper;
 
-class DefaultController
+class IdeHelperCommand
 {
     /**
      * @var \Spiral\Core\MemoryInterface

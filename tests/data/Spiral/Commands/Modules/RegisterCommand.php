@@ -1,7 +1,7 @@
 <?php
-namespace TestApplication\Controllers;
+namespace Spiral\Commands\Modules;
 
-class DefaultController
+class RegisterCommand
 {
     /**
      * @var \Spiral\Core\MemoryInterface

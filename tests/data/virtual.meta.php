@@ -20,7 +20,6 @@ override(\Interop\Container\ContainerInterface::get(0), map([
 'db' => \Spiral\Database\Entities\Database::class,
 'mongo' => \Spiral\ODM\Entities\MongoDatabase::class,
 'cookies' => \Spiral\Http\Cookies\CookieQueue::class,
-'router' => \Spiral\Http\Routing\RouterInterface::class,
 'session' => \Spiral\Session\SessionInterface::class,
 'paginators' => \Spiral\Pagination\PaginatorsInterface::class,
 'request' => \Psr\Http\Message\ServerRequestInterface::class,
@@ -30,6 +29,7 @@ override(\Interop\Container\ContainerInterface::get(0), map([
 'permissions' => \Spiral\Security\PermissionsInterface::class,
 'rules' => \Spiral\Security\RulesInterface::class,
 'actor' => \Spiral\Security\ActorInterface::class,
+'router' => \Spiral\Http\Routing\RouterInterface::class,
 ]));
 override(\spiral(0), map([
 'memory' => \Spiral\Core\MemoryInterface::class,
@@ -51,7 +51,6 @@ override(\spiral(0), map([
 'db' => \Spiral\Database\Entities\Database::class,
 'mongo' => \Spiral\ODM\Entities\MongoDatabase::class,
 'cookies' => \Spiral\Http\Cookies\CookieQueue::class,
-'router' => \Spiral\Http\Routing\RouterInterface::class,
 'session' => \Spiral\Session\SessionInterface::class,
 'paginators' => \Spiral\Pagination\PaginatorsInterface::class,
 'request' => \Psr\Http\Message\ServerRequestInterface::class,
@@ -61,5 +60,6 @@ override(\spiral(0), map([
 'permissions' => \Spiral\Security\PermissionsInterface::class,
 'rules' => \Spiral\Security\RulesInterface::class,
 'actor' => \Spiral\Security\ActorInterface::class,
+'router' => \Spiral\Http\Routing\RouterInterface::class,
 ]));
 }

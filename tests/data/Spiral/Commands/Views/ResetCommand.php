@@ -1,7 +1,7 @@
 <?php
-namespace TestApplication\Controllers;
+namespace Spiral\Commands\Views;
 
-class DefaultController
+class ResetCommand
 {
     /**
      * @var \Spiral\Core\MemoryInterface

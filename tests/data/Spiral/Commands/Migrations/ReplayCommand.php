@@ -1,7 +1,7 @@
 <?php
-namespace TestApplication\Controllers;
+namespace Spiral\Commands\Migrations;
 
-class DefaultController
+class ReplayCommand
 {
     /**
      * @var \Spiral\Core\MemoryInterface

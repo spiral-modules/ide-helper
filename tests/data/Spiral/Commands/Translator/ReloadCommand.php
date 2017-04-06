@@ -1,7 +1,7 @@
 <?php
-namespace TestApplication\Controllers;
+namespace Spiral\Commands\Translator;
 
-class DefaultController
+class ReloadCommand
 {
     /**
      * @var \Spiral\Core\MemoryInterface
