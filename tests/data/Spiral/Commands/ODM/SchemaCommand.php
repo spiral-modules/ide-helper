@@ -1,7 +1,7 @@
 <?php
-namespace TestApplication\Controllers;
+namespace Spiral\Commands\ODM;
 
-class DefaultController
+class SchemaCommand
 {
     /**
      * @var \Spiral\Core\MemoryInterface

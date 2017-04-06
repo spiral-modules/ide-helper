@@ -1,7 +1,7 @@
 <?php
-namespace TestApplication\Controllers;
+namespace Spiral\Commands\Translator;
 
-class DefaultController
+class IndexCommand
 {
     /**
      * @var \Spiral\Core\MemoryInterface

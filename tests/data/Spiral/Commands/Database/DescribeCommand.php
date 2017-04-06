@@ -1,7 +1,7 @@
 <?php
-namespace TestApplication\Controllers;
+namespace Spiral\Commands\Database;
 
-class DefaultController
+class DescribeCommand
 {
     /**
      * @var \Spiral\Core\MemoryInterface

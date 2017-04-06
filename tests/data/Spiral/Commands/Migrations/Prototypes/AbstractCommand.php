@@ -1,7 +1,7 @@
 <?php
-namespace TestApplication\Controllers;
+namespace Spiral\Commands\Migrations\Prototypes;
 
-class DefaultController
+class AbstractCommand
 {
     /**
      * @var \Spiral\Core\MemoryInterface
