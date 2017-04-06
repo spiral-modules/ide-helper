@@ -10,7 +10,7 @@
   ],
   "require": {
     "php": ">=7.0",
-    "spiral/framework": "^0.9"
+    "spiral/framework": "^1.0"
   },
   "autoload": {
     "psr-4": {
@@ -18,7 +18,7 @@
     }
   },
   "require-dev": {
-    "spiral/odm": "^0.9.6",
+    "spiral/odm": "^1.0",
     "phpunit/phpunit": "~5.0",
     "mockery/mockery": "^0.9.4"
   },
