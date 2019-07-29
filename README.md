@@ -23,12 +23,11 @@ composer require spiral/ide-helper
 ```
 
 ## Configuration and Terminology
-
 The module is configured via `config/modules/ide-helper.php` file.
 
 The config has 3 sections: `writers`, `locators`, `scopes`.
 
-[TL;DR SHOW ME TEH CONFIG](resources/config.php)
+[VIEW CONFIG FILE](resources/config.php)
 
 `locators` section includes any Locators used by the module. Locator is a class that responsible for
 searching classes and it's [magic] members.

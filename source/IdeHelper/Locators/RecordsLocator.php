@@ -65,13 +65,12 @@ class RecordsLocator implements LocatorInterface
         $records = [];
         foreach ($schemas as $schema) {
             if ($schema instanceof RecordSchema) {
-                $columns = $builder->requestTable($schema->getTable())->getColumns();
+                $columns = $builder->requestTable($schema->getTable(), $schema->getDatabase())->getColumns();
                 $members = $this->scan($schema, $columns, $relations);
 
                 $records[] = new ClassDefinition($schema->getClass(), $members);
             } else {
-                $this->logger->warning("Schema for {$schema->getClass()} is not "
-                    . RecordSchema::class . " instance");
+                $this->logger->warning("Schema for {$schema->getClass()} is not " . RecordSchema::class . " instance");
             }
         }
 
@@ -87,11 +86,11 @@ class RecordsLocator implements LocatorInterface
      */
     private function scan(RecordSchema $context, array $columns, array $relations)
     {
-        $cols = $this->processColumns($columns);
+        $flatColumns = $this->processColumns($columns);
+
         $fields = $this->processFields($context->getFields(), $columns);
         $relations = $this->findRelations($context->getClass(), $relations);
-
-        $properties = array_merge($cols, $fields, $relations);
+        $properties = array_merge($flatColumns, $fields, $relations);
 
         $docs = [];
         foreach ($properties as $name => $type) {
